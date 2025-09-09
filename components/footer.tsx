@@ -18,33 +18,33 @@ export function Footer() {
               </div>
             </div>
             <p className="text-primary-foreground/80 leading-relaxed max-w-md">
-              Professional electrical services with years of experience. We provide reliable, safe, and affordable
-              electrical solutions for residential and commercial needs.
+              Servicios eléctricos profesionales con años de experiencia. Brindamos soluciones eléctricas confiables,
+              seguras y accesibles para necesidades residenciales y comerciales.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold text-lg mb-4">Quick Links</h4>
+            <h4 className="font-semibold text-lg mb-4">Enlaces Rápidos</h4>
             <ul className="space-y-2">
               <li>
                 <a href="#" className="text-primary-foreground/80 hover:text-accent transition-colors">
-                  Home
+                  Inicio
                 </a>
               </li>
               <li>
                 <a href="#" className="text-primary-foreground/80 hover:text-accent transition-colors">
-                  Services
+                  Servicios
                 </a>
               </li>
               <li>
                 <a href="#" className="text-primary-foreground/80 hover:text-accent transition-colors">
-                  About Us
+                  Acerca de Nosotros
                 </a>
               </li>
               <li>
                 <a href="#" className="text-primary-foreground/80 hover:text-accent transition-colors">
-                  Contact
+                  Contacto
                 </a>
               </li>
             </ul>
@@ -52,17 +52,17 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-semibold text-lg mb-4">Contact</h4>
+            <h4 className="font-semibold text-lg mb-4">Contacto</h4>
             <div className="space-y-2 text-primary-foreground/80">
-              <p className="font-semibold text-accent">Emergency: +123 456 789</p>
-              <p>Office: 1312-600009</p>
+              <p className="font-semibold text-accent">Emergencia: +123 456 789</p>
+              <p>Oficina: 1312-600009</p>
               <p>info@zazproelectrical.com</p>
             </div>
           </div>
         </div>
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
-          <p className="text-primary-foreground/60">© 2024 ZAZPRO ELECTRICAL PTY.LTD. All rights reserved.</p>
+          <p className="text-primary-foreground/60">© 2024 ZAZPRO ELECTRICAL PTY.LTD. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

@@ -29,26 +29,26 @@ export function Navbar() {
 
           {/* Emergency Number - Desktop */}
           <div className="hidden md:flex items-center space-x-2 text-sm">
-            <span className="text-primary-foreground/70">Emergency Number</span>
+            <span className="text-primary-foreground/70">Número de Emergencia</span>
             <span className="font-semibold text-accent">+123 456 789</span>
           </div>
 
           {/* Navigation Links - Desktop */}
           <div className="hidden md:flex items-center space-x-8">
             <a href="#" className="text-primary-foreground hover:text-accent transition-colors">
-              Home
+              Inicio
             </a>
             <a href="#" className="text-primary-foreground hover:text-accent transition-colors">
-              Service
+              Servicios
             </a>
             <a href="#" className="text-primary-foreground hover:text-accent transition-colors">
-              Page
+              Página
             </a>
             <a href="#" className="text-primary-foreground hover:text-accent transition-colors">
               Blog
             </a>
             <a href="#" className="text-primary-foreground hover:text-accent transition-colors">
-              Contact
+              Contacto
             </a>
           </div>
 
@@ -70,26 +70,26 @@ export function Navbar() {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-primary/95 border-t border-primary-foreground/20">
               <div className="flex items-center space-x-2 text-sm mb-4 px-3 py-2">
-                <span className="text-primary-foreground/70">Emergency:</span>
+                <span className="text-primary-foreground/70">Emergencia:</span>
                 <span className="font-semibold text-accent">+123 456 789</span>
               </div>
               <a
                 href="#"
                 className="block px-3 py-2 text-primary-foreground hover:text-accent transition-colors font-medium"
               >
-                Home
+                Inicio
               </a>
               <a
                 href="#"
                 className="block px-3 py-2 text-primary-foreground hover:text-accent transition-colors font-medium"
               >
-                Service
+                Servicios
               </a>
               <a
                 href="#"
                 className="block px-3 py-2 text-primary-foreground hover:text-accent transition-colors font-medium"
               >
-                Page
+                Página
               </a>
               <a
                 href="#"
@@ -101,7 +101,7 @@ export function Navbar() {
                 href="#"
                 className="block px-3 py-2 text-primary-foreground hover:text-accent transition-colors font-medium"
               >
-                Contact
+                Contacto
               </a>
             </div>
           </div>

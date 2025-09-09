@@ -4,22 +4,22 @@ import { Clock, Zap, DollarSign, Award } from "lucide-react"
 const features = [
   {
     icon: Clock,
-    title: "24/7 Availability",
+    title: "Disponibilidad 24/7",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
     icon: Zap,
-    title: "Quick Response",
+    title: "Respuesta Rápida",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
     icon: DollarSign,
-    title: "Affordable Price",
+    title: "Precio Accesible",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
     icon: Award,
-    title: "Licensed Electrician",
+    title: "Electricista Licenciado",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
 ]
@@ -45,9 +45,7 @@ export function Features() {
                       <IconComponent className="h-8 w-8 text-card" />
                     </div>
                     <h3 className="text-xl font-bold text-card mb-3">{feature.title}</h3>
-                    <p className="text-card leading-relaxed font-light">
-                      {feature.description}
-                    </p>
+                    <p className="text-card leading-relaxed font-light">{feature.description}</p>
                   </div>
                 </CardContent>
               </Card>

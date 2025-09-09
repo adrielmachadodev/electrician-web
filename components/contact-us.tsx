@@ -10,12 +10,8 @@ export function ContactUs() {
     <section className="py-32 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         <div className="mb-16">
-          <MiniTitle
-            title="contact us"
-          />
-          <Title 
-            title="Let's talk"
-          />
+          <MiniTitle title="contáctanos" />
+          <Title title="Hablemos" />
           <p className="text-gray-600 max-w-lg">
             Aliquam ex lacus, imperdiet eu efficitur blandit, eleifend a dui. Curabitur auctor interdum rutrum.
             Curabitur tincidunt eu nunc sit amet eleifend.
@@ -26,15 +22,15 @@ export function ContactUs() {
           <div className="space-y-8">
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
-                  <Phone className="h-6 w-6 text-accent" />
+                <Phone className="h-6 w-6 text-accent" />
                 <div>
-                  <h4 className="font-semibold text-primary mb-1">Phone</h4>
+                  <h4 className="font-semibold text-primary mb-1">Teléfono</h4>
                   <p className="text-gray-600">+123 456 789</p>
                 </div>
               </div>
 
               <div className="flex items-center space-x-4">
-                  <Mail className="h-6 w-6 text-accent" />
+                <Mail className="h-6 w-6 text-accent" />
                 <div>
                   <h4 className="font-semibold text-primary mb-1">Email</h4>
                   <p className="text-gray-600">awesome@site.com</p>
@@ -42,9 +38,9 @@ export function ContactUs() {
               </div>
 
               <div className="flex items-center space-x-4">
-                  <MapPin className="h-6 w-6 text-accent" />
+                <MapPin className="h-6 w-6 text-accent" />
                 <div>
-                  <h4 className="font-semibold text-primary mb-1">Address</h4>
+                  <h4 className="font-semibold text-primary mb-1">Dirección</h4>
                   <p className="text-gray-600">Roving Street, Big City, Pku</p>
                 </div>
               </div>
@@ -55,23 +51,26 @@ export function ContactUs() {
           <div>
             <form className="space-y-6">
               <div>
-                <Input type="text" placeholder="Your Name" className="h-12 border-gray-300 focus:border-primary" />
+                <Input type="text" placeholder="Tu Nombre" className="h-12 border-gray-300 focus:border-primary" />
               </div>
               <div>
-                <Input type="email" placeholder="Your Email" className="h-12 border-gray-300 focus:border-primary" />
+                <Input type="email" placeholder="Tu Email" className="h-12 border-gray-300 focus:border-primary" />
               </div>
               <div>
-                <Input type="tel" placeholder="Your Phone" className="h-12 border-gray-300 focus:border-primary" />
+                <Input type="tel" placeholder="Tu Teléfono" className="h-12 border-gray-300 focus:border-primary" />
               </div>
               <div>
                 <Textarea
-                  placeholder="Your Message"
+                  placeholder="Tu Mensaje"
                   rows={6}
                   className="border-gray-300 focus:border-primary resize-none"
                 />
               </div>
-              <Button type="submit" className="w-full h-12 bg-accent hover:bg-accent/90 text-white font-semibold rounded-none">
-                Send Message
+              <Button
+                type="submit"
+                className="w-full h-12 bg-accent hover:bg-accent/90 text-white font-semibold rounded-none"
+              >
+                Enviar Mensaje
               </Button>
             </form>
           </div>
