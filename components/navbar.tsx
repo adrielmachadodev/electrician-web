@@ -3,16 +3,18 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X, Zap } from "lucide-react"
+import { useScrollY } from "@/hooks/useScroolY"
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
+  const scrollY = useScrollY()
 
   return (
-    <nav className="bg-primary border-b border-border sticky top-0 z-50">
+    <nav className="bg-primary sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className={`flex justify-between items-center duration-500 ${ scrollY > 50 ? 'h-24' : 'h-32'}`}>
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="bg-accent p-2 rounded-lg">
@@ -33,19 +35,19 @@ export function Navbar() {
 
           {/* Navigation Links - Desktop */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-primary-foreground hover:text-accent transition-colors font-medium">
+            <a href="#" className="text-primary-foreground hover:text-accent transition-colors">
               Home
             </a>
-            <a href="#" className="text-primary-foreground hover:text-accent transition-colors font-medium">
+            <a href="#" className="text-primary-foreground hover:text-accent transition-colors">
               Service
             </a>
-            <a href="#" className="text-primary-foreground hover:text-accent transition-colors font-medium">
+            <a href="#" className="text-primary-foreground hover:text-accent transition-colors">
               Page
             </a>
-            <a href="#" className="text-primary-foreground hover:text-accent transition-colors font-medium">
+            <a href="#" className="text-primary-foreground hover:text-accent transition-colors">
               Blog
             </a>
-            <a href="#" className="text-primary-foreground hover:text-accent transition-colors font-medium">
+            <a href="#" className="text-primary-foreground hover:text-accent transition-colors">
               Contact
             </a>
           </div>

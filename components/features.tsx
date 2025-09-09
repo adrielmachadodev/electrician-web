@@ -26,19 +26,29 @@ const features = [
 
 export function Features() {
   return (
-    <section className="py-16 lg:py-24 bg-primary -mt-16 relative z-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+    <section className="-mt-24 relative z-20">
+      <div className="max-w-6xl mx-auto bg-primary">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
           {features.map((feature, index) => {
             const IconComponent = feature.icon
             return (
-              <Card key={index} className="text-center hover:shadow-lg transition-shadow duration-300 bg-white">
-                <CardContent className="p-6">
-                  <div className="bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <IconComponent className="h-8 w-8 text-accent" />
+              <Card
+                key={index}
+                className={`
+                  text-center hover:shadow-lg transition-shadow duration-300 
+                  bg-primary border-0 rounded-none
+                `}
+              >
+                <CardContent className={`my-6 ${index !== features.length - 1 ? "md:border-r border-white/50" : ""}`}>
+                  <div>
+                    <div className="bg-card/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <IconComponent className="h-8 w-8 text-card" />
+                    </div>
+                    <h3 className="text-xl font-bold text-card mb-3">{feature.title}</h3>
+                    <p className="text-card leading-relaxed font-light">
+                      {feature.description}
+                    </p>
                   </div>
-                  <h3 className="text-xl font-bold text-primary mb-3">{feature.title}</h3>
-                  <p className="text-primary/70 leading-relaxed">{feature.description}</p>
                 </CardContent>
               </Card>
             )
