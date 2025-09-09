@@ -31,14 +31,15 @@ export function OurExpertise() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 min-h-96 gap-8">
           {services.map((service, index) => (
             <div key={index} className="h-full group cursor-pointer">
-              <div className="relative overflow-hidden shadow-lg transition-transform duration-300 h-80 bg-white rounded-lg">
+              <div className="relative overflow-hidden shadow-lg transition-transform duration-300">
                 <img
                   src={service.image || "/placeholder.svg"}
                   alt={service.title}
-                  className="w-full h-3/4 object-cover transition-transform duration-300 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
-                <div className="absolute bottom-0 left-0 right-0 h-1/4 bg-white p-6 flex flex-col justify-center">
-                  <h4 className="text-xl font-bold text-[#003049] mb-2">{service.title}</h4>
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h4 className="text-xl font-bold text-white mb-2">{service.title}</h4>
                   <div className="w-12 h-1 bg-[#FFB700] rounded-full" />
                 </div>
               </div>
