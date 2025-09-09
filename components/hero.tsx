@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Contact, Phone } from "lucide-react"
+import { ArrowRight, Contact } from "lucide-react"
 
 export function Hero() {
   return (
@@ -24,9 +24,7 @@ export function Hero() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 drop-shadow-lg text-balance">
               Our Electricians Have
               <br />
-              <span className="text-accent">
-                "Amp-Le"{' '}
-              </span>
+              <span className="text-accent">"Amp-Le" </span>
               Experience!
             </h2>
             <p className="mb-8 text-white leading-relaxed max-w-2xl drop-shadow-md">
@@ -35,7 +33,7 @@ export function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold">
+              <Button size="lg" className="bg-[#FFB700] hover:bg-[#E6A500] text-[#003049] font-semibold">
                 Learn More
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -48,7 +46,6 @@ export function Hero() {
                 Contact us now!
               </Button>
             </div>
-
           </div>
         </div>
       </div>

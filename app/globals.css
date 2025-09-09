@@ -15,8 +15,9 @@
   --primary-foreground: oklch(1 0 0); /* #FFFFFF - Text on primary backgrounds */
   --secondary: oklch(0.75 0.15 85); /* #FBBF24 - Accent color (Gold) */
   --secondary-foreground: oklch(0.2 0.05 210); /* #003049 - Text on secondary backgrounds */
-  --muted: oklch(0.2 0.05 210); /* #003049 - Muted background for sections */
-  --muted-foreground: oklch(1 0 0); /* #FFFFFF - Muted text color on dark backgrounds */
+  /* Fixed muted colors to have proper contrast */
+  --muted: oklch(0.96 0.005 264); /* #F3F4F6 - Light gray for muted sections */
+  --muted-foreground: oklch(0.2 0.05 210); /* #003049 - Dark text on light muted backgrounds */
   --accent: oklch(0.75 0.15 85); /* #FBBF24 - Accent color for call-to-action (Gold) */
   --accent-foreground: oklch(0.2 0.05 210); /* #003049 - Text on accent backgrounds */
   --destructive: oklch(0.55 0.25 25); /* #dc2626 - Color for error messages */

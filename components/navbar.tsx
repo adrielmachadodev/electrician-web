@@ -14,7 +14,7 @@ export function Navbar() {
   return (
     <nav className="bg-primary sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className={`flex justify-between items-center duration-500 ${ scrollY > 50 ? 'h-24' : 'h-32'}`}>
+        <div className={`flex justify-between items-center duration-500 ${scrollY > 50 ? "h-24" : "h-32"}`}>
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="bg-accent p-2 rounded-lg">
@@ -58,7 +58,7 @@ export function Navbar() {
               variant="ghost"
               size="sm"
               onClick={toggleMenu}
-              className="text-primary-foreground hover:text-accent"
+              className="text-primary-foreground hover:text-primary-foreground hover:bg-primary-foreground/10"
             >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
