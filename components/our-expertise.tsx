@@ -37,9 +37,9 @@ export function OurExpertise() {
                   alt={service.title}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h4 className="text-xl font-bold text-white mb-2">{service.title}</h4>
+                  <h4 className="text-xl font-bold text-white mb-2 drop-shadow-2xl">{service.title}</h4>
                   <div className="w-12 h-1 bg-[#FFB700] rounded-full" />
                 </div>
               </div>
