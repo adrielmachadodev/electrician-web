@@ -19,13 +19,13 @@ export function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-white">
             <h1 className="text-lg md:text-xl font-bold mb-6 text-accent drop-shadow-lg">
-              Professional Electrical Service
+              Servicio Eléctrico Profesional
             </h1>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 drop-shadow-lg text-balance">
-              Our Electricians Have
+              Nuestros Electricistas Tienen
               <br />
-              <span className="text-accent">"Amp-Le" </span>
-              Experience!
+              <span className="text-accent">"Amplia" </span>
+              Experiencia!
             </h2>
             <p className="mb-8 text-white leading-relaxed max-w-2xl drop-shadow-md">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget accumsan nisl, euismod dapibus
@@ -34,7 +34,7 @@ export function Hero() {
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Button size="lg" className="bg-accent text-white font-semibold rounded-none">
-                Learn More
+                Saber Más
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button
@@ -43,7 +43,7 @@ export function Hero() {
                 className="border-white text-white hover:bg-white hover:text-primary bg-transparent backdrop-blur-sm rounded-none"
               >
                 <Contact className="mr-2 h-5 w-5" />
-                Contact us now!
+                ¡Contáctanos ahora!
               </Button>
             </div>
           </div>

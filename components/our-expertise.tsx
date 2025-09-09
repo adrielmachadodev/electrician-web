@@ -4,15 +4,15 @@ import { Title } from "./ui/title"
 export function OurExpertise() {
   const services = [
     {
-      title: "Commercial Electrical",
+      title: "Eléctrico Comercial",
       image: "/commercial-electrical-work-office-building-electri.jpg",
     },
     {
-      title: "Industrial Electrical",
+      title: "Eléctrico Industrial",
       image: "/industrial-electrical-work-factory-electrical-syst.jpg",
     },
     {
-      title: "Residential Electrical",
+      title: "Eléctrico Residencial",
       image: "/residential-electrical-work-home-electrical-system.jpg",
     },
   ]
@@ -22,12 +22,8 @@ export function OurExpertise() {
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-6">
-          <MiniTitle 
-            title="Our expertise"
-          />
-          <Title 
-            title="The Field On Which We Give Services"
-          />
+          <MiniTitle title="Nuestra Experiencia" />
+          <Title title="Los Campos en los que Brindamos Servicios" />
           <p className="text-gray-600 text-lg leading-relaxed">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate, dui quis semper consequat,
             tellus augue fringilla orci, non fermentum neque nunc id nibh.
