@@ -33,14 +33,14 @@ export function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Button size="lg" className="bg-[#FFB700] hover:bg-[#E6A500] text-[#003049] font-semibold">
+              <Button size="lg" className="bg-accent text-white font-semibold rounded-none">
                 Learn More
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-primary bg-transparent backdrop-blur-sm"
+                className="border-white text-white hover:bg-white hover:text-primary bg-transparent backdrop-blur-sm rounded-none"
               >
                 <Contact className="mr-2 h-5 w-5" />
                 Contact us now!
