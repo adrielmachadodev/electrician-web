@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { MoveRight, Sparkles, Zap } from "lucide-react"
+import { MiniTitle } from "./ui/mini-title"
+import { Title } from "./ui/title"
 
 export function AboutUs() {
 
@@ -13,11 +15,13 @@ export function AboutUs() {
   return (
     <section className="py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="space-y-3 pb-8">
-          <h2 className="text-sm font-semibold text-accent uppercase tracking-wider">About Us</h2>
-          <h3 className="text-3xl lg:text-4xl font-bold text-primary leading-tight">
-            We Are Professional Electrical Service
-          </h3>
+        <div className="space-y-3 pb-3">
+          <MiniTitle 
+            title="About us"
+          />
+          <Title 
+            title="We Are Professional Electrical Service"
+          />
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">

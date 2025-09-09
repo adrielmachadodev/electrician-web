@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Zap, Wrench, Shield, Settings, Activity } from "lucide-react"
+import { MiniTitle } from "./ui/mini-title"
+import { Title } from "./ui/title"
 
 export function OurServices() {
   const services = [
@@ -42,13 +44,20 @@ export function OurServices() {
         <div className="px-4 mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-white">
           <div className="flex flex-col gap-6">
             <div>
-              <h2 className="text-sm font-semibold text-accent uppercase tracking-wider mb-3">Our Services</h2>
-              <h3 className="text-4xl font-bold">24/7 Electrician Services</h3>
+              <div>
+                <MiniTitle 
+                  title="our services"
+                />
+                <Title 
+                  title="24/7 Electrician Services"
+                  color="text-white"
+                />
+              </div>
+              <p className="text-primary-foreground/70 max-w-2xl mx-auto leading-relaxed">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in eleifend augue. Pellentesque dapibus odio
+                non fermentum.
+              </p>
             </div>
-            <p className="text-primary-foreground/70 max-w-2xl mx-auto leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in eleifend augue. Pellentesque dapibus odio
-              non fermentum.
-            </p>
             <p className="text-accent underline text-sm font-medium">Read more</p>
           </div>
           {services.map((service, index) => {

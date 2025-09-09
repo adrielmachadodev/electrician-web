@@ -1,3 +1,6 @@
+import { MiniTitle } from "./ui/mini-title"
+import { Title } from "./ui/title"
+
 export function OurExpertise() {
   const services = [
     {
@@ -19,8 +22,12 @@ export function OurExpertise() {
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-6">
-          <h2 className="text-sm font-semibold text-accent uppercase tracking-wider mb-3">Our Expertise</h2>
-          <h3 className="text-3xl lg:text-4xl font-bold text-primary mb-6">The Field On Which We Give Services</h3>
+          <MiniTitle 
+            title="Our expertise"
+          />
+          <Title 
+            title="The Field On Which We Give Services"
+          />
           <p className="text-gray-600 text-lg leading-relaxed">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate, dui quis semper consequat,
             tellus augue fringilla orci, non fermentum neque nunc id nibh.
