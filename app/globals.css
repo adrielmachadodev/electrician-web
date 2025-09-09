@@ -6,39 +6,39 @@
 :root {
   /* Updated color tokens to match ZAZPRO ELECTRICAL design brief */
   --background: oklch(1 0 0); /* #FFFFFF - Main background color */
-  --foreground: oklch(0.2 0.05 210); /* #003049 - Primary text color (Dark Blue) */
+  --foreground: oklch(0.2938 0.0656 238.47); /* #003049 - Primary text color (Dark Blue) */
   --card: oklch(0.96 0.005 264); /* #F3F4F6 - Card background (Light Gray) */
-  --card-foreground: oklch(0.2 0.05 210); /* #003049 - Card text color */
+  --card-foreground: oklch(0.2938 0.0656 238.47); /* #003049 - Card text color */
   --popover: oklch(1 0 0); /* #FFFFFF - Popover background */
   --popover-foreground: oklch(0.25 0.02 264); /* #374151 - Popover text color */
-  --primary: oklch(0.2 0.05 210); /* #003049 - Primary color (Dark Blue) */
+  --primary: oklch(0.2938 0.0656 238.47); /* #003049 - Primary color (Dark Blue) */
   --primary-foreground: oklch(1 0 0); /* #FFFFFF - Text on primary backgrounds */
-  --secondary: oklch(0.75 0.15 85); /* #FBBF24 - Accent color (Gold) */
-  --secondary-foreground: oklch(0.2 0.05 210); /* #003049 - Text on secondary backgrounds */
+  --secondary: oklch(0.4443 0.0544 232.8); /* #FBBF24 - Accent color (Gold) */
+  --secondary-foreground: oklch(0.2938 0.0656 238.47); /* #003049 - Text on secondary backgrounds */
   /* Fixed muted colors to have proper contrast */
   --muted: oklch(0.96 0.005 264); /* #F3F4F6 - Light gray for muted sections */
-  --muted-foreground: oklch(0.2 0.05 210); /* #003049 - Dark text on light muted backgrounds */
-  --accent: oklch(0.75 0.15 85); /* #FBBF24 - Accent color for call-to-action (Gold) */
-  --accent-foreground: oklch(0.2 0.05 210); /* #003049 - Text on accent backgrounds */
+  --muted-foreground: oklch(0.2938 0.0656 238.47); /* #003049 - Dark text on light muted backgrounds */
+  --accent: oklch(0.7194 0.1794 54.4); /* #FBBF24 - Accent color for call-to-action (Gold) */
+  --accent-foreground: oklch(0.2938 0.0656 238.47); /* #003049 - Text on accent backgrounds */
   --destructive: oklch(0.55 0.25 25); /* #dc2626 - Color for error messages */
   --destructive-foreground: oklch(1 0 0); /* #FFFFFF - Text on destructive backgrounds */
   --border: oklch(0.92 0.005 264); /* #E5E7EB - Border color */
   --input: oklch(1 0 0); /* #FFFFFF - Input field background */
-  --ring: oklch(0.75 0.15 85); /* #FBBF24 - Ring color for focus states (Gold) */
-  --chart-1: oklch(0.2 0.05 210); /* #003049 - Chart color 1 */
-  --chart-2: oklch(0.75 0.15 85); /* #FBBF24 - Chart color 2 */
+  --ring: oklch(0.7194 0.1794 54.4); /* #FBBF24 - Ring color for focus states (Gold) */
+  --chart-1: oklch(0.2938 0.0656 238.47); /* #003049 - Chart color 1 */
+  --chart-2: oklch(0.7194 0.1794 54.4); /* #FBBF24 - Chart color 2 */
   --chart-3: oklch(0.25 0.02 264); /* #374151 - Chart color 3 */
   --chart-4: oklch(0.96 0.005 264); /* #F3F4F6 - Chart color 4 */
-  --chart-5: oklch(0.2 0.05 210); /* #003049 - Chart color 5 */
+  --chart-5: oklch(0.2938 0.0656 238.47); /* #003049 - Chart color 5 */
   --radius: 0.5rem; /* Standard border radius for rounded corners */
   --sidebar: oklch(0.96 0.005 264); /* #F3F4F6 - Sidebar background */
-  --sidebar-foreground: oklch(0.2 0.05 210); /* #003049 - Sidebar text color */
-  --sidebar-primary: oklch(0.2 0.05 210); /* #003049 - Sidebar primary color */
+  --sidebar-foreground: oklch(0.2938 0.0656 238.47); /* #003049 - Sidebar text color */
+  --sidebar-primary: oklch(0.2938 0.0656 238.47); /* #003049 - Sidebar primary color */
   --sidebar-primary-foreground: oklch(1 0 0); /* #FFFFFF - Text on sidebar primary */
-  --sidebar-accent: oklch(0.75 0.15 85); /* #FBBF24 - Sidebar accent */
-  --sidebar-accent-foreground: oklch(0.2 0.05 210); /* #003049 - Text on sidebar accent */
+  --sidebar-accent: oklch(0.7194 0.1794 54.4); /* #FBBF24 - Sidebar accent */
+  --sidebar-accent-foreground: oklch(0.2938 0.0656 238.47); /* #003049 - Text on sidebar accent */
   --sidebar-border: oklch(0.92 0.005 264); /* #E5E7EB - Sidebar border color */
-  --sidebar-ring: oklch(0.75 0.15 85); /* #FBBF24 - Sidebar ring color */
+  --sidebar-ring: oklch(0.7194 0.1794 54.4); /* #FBBF24 - Sidebar ring color */
 }
 
 .dark {

@@ -37,7 +37,7 @@ export function OurServices() {
   ]
 
   return (
-    <section className="py-32 bg-primary">
+    <section className="py-32 bg-secondary">
         {/* Services Grid */}
         <div className="px-4 mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-white">
           <div className="flex flex-col gap-6">
@@ -54,10 +54,10 @@ export function OurServices() {
           {services.map((service, index) => {
             const IconComponent = service.icon
             return (
-              <Card key={index} className="bg-primary border rounded-none transition-shadow duration-300">
+              <Card key={index} className="bg-transparent border rounded-none transition-shadow duration-300">
                 <CardContent className="p-8">
-                  <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mb-6">
-                    <IconComponent className="w-8 h-8 text-primary" />
+                  <div className="w-16 h-16 border-2 rounded-full flex items-center justify-center mb-6">
+                    <IconComponent className="w-8 h-8 text-white" />
                   </div>
                   <h4 className="text-xl font-semibold mb-4 text-white">{service.title}</h4>
                   <p className="text-sm text-primary-foreground/70 leading-relaxed">{service.description}</p>

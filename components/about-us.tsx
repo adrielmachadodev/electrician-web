@@ -64,7 +64,7 @@ export function AboutUs() {
                     className="flex items-center gap-2"
                   >
                     <Zap className="text-accent" />
-                    <p>{ point }</p>
+                    <p className="text-black">{ point }</p>
                   </div>
                 ))
               }

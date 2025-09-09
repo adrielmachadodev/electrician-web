@@ -20,7 +20,7 @@ export function OurExpertise() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-6">
           <h2 className="text-sm font-semibold text-accent uppercase tracking-wider mb-3">Our Expertise</h2>
-          <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">The Field On Which We Give Services</h3>
+          <h3 className="text-3xl lg:text-4xl font-bold text-primary mb-6">The Field On Which We Give Services</h3>
           <p className="text-gray-600 text-lg leading-relaxed">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate, dui quis semper consequat,
             tellus augue fringilla orci, non fermentum neque nunc id nibh.
@@ -40,7 +40,7 @@ export function OurExpertise() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <h4 className="text-xl font-bold text-white mb-2 drop-shadow-2xl">{service.title}</h4>
-                  <div className="w-12 h-1 bg-[#FFB700] rounded-full" />
+                  <div className="w-12 h-1 bg-accent rounded-full" />
                 </div>
               </div>
             </div>
