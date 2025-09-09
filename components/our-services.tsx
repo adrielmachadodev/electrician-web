@@ -37,43 +37,35 @@ export function OurServices() {
   ]
 
   return (
-    <section className="py-16 bg-white">
-      <div className="container mx-auto px-4">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-[#003049] mb-4">Our Services</h2>
-          <h3 className="text-2xl font-semibold text-[#003049] mb-6">24/7 Electrician Services</h3>
-          <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in eleifend augue. Pellentesque dapibus odio
-            non fermentum.
-          </p>
-        </div>
-
+    <section className="py-32 bg-primary">
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="px-4 mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-white">
+          <div className="flex flex-col gap-6">
+            <div>
+              <h2 className="text-sm font-semibold text-accent uppercase tracking-wider mb-3">Our Services</h2>
+              <h3 className="text-4xl font-bold">24/7 Electrician Services</h3>
+            </div>
+            <p className="text-primary-foreground/70 max-w-2xl mx-auto leading-relaxed">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in eleifend augue. Pellentesque dapibus odio
+              non fermentum.
+            </p>
+            <p className="text-accent underline text-sm font-medium">Read more</p>
+          </div>
           {services.map((service, index) => {
             const IconComponent = service.icon
             return (
-              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-[#FFB700] rounded-full flex items-center justify-center mx-auto mb-6">
-                    <IconComponent className="w-8 h-8 text-[#003049]" />
+              <Card key={index} className="bg-primary border rounded-none transition-shadow duration-300">
+                <CardContent className="p-8">
+                  <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mb-6">
+                    <IconComponent className="w-8 h-8 text-primary" />
                   </div>
-                  <h4 className="text-xl font-semibold text-[#003049] mb-4">{service.title}</h4>
-                  <p className="text-gray-600 leading-relaxed">{service.description}</p>
+                  <h4 className="text-xl font-semibold mb-4 text-white">{service.title}</h4>
+                  <p className="text-sm text-primary-foreground/70 leading-relaxed">{service.description}</p>
                 </CardContent>
               </Card>
             )
           })}
         </div>
-
-        {/* Read More Button */}
-        <div className="text-center">
-          <Button size="lg" className="bg-[#003049] hover:bg-[#003049]/90 text-white px-8 py-3 text-lg font-semibold">
-            Read More
-          </Button>
-        </div>
-      </div>
     </section>
   )
 }
