@@ -15,21 +15,15 @@ export function Navbar() {
   const scrollY = useScrollY()
 
   return (
-    <nav className="bg-primary sticky top-0 z-50">
+    <nav className={`fixed w-full top-0 z-50 duration-500 ${ scrollY > 70 ? "bg-primary/100" : "bg-primary/0"}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className={`flex justify-between items-center duration-500 ${scrollY > 50 ? "h-24" : "h-32"}`}>
+        <div className={`flex justify-between items-center duration-500 ${scrollY > 70 ? "h-24" : "h-32"}`}>
           {/* Logo */}
           <Image 
             src={Logo}
             alt="Logo"
-            className={`transition-all w-auto ${scrollY > 50 ? "h-18" : "h-24"}`}
+            className={`duration-500 w-auto ${scrollY > 70 ? "h-18" : "h-20"}`}
           />
-
-          {/* Emergency Number - Desktop */}
-          <div className="hidden md:flex items-center space-x-2 text-sm">
-            <span className="text-primary-foreground/70">Número de Emergencia</span>
-            <span className="font-semibold text-accent">+123 456 789</span>
-          </div>
 
           {/* Navigation Links - Desktop */}
           <div className="hidden md:flex items-center space-x-8">
