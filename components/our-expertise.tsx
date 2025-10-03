@@ -20,8 +20,6 @@ export function OurExpertise() {
   return (
     <section className="py-32 bg-card">
       <div className="max-w-7xl mx-auto px-4">
-        {/* Header */}
-        <div className="max-w-3xl mb-6">
         <div className="text-center max-w-3xl mx-auto mb-6">
           <MiniTitle title="Nuestra Experiencia" />
           <Title title="Los Campos en los que Brindamos Servicios" />
@@ -32,7 +30,7 @@ export function OurExpertise() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 min-h-96 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div key={index} className="h-full group cursor-pointer">
               <div className="relative overflow-hidden shadow-lg transition-transform duration-300">
@@ -49,7 +47,6 @@ export function OurExpertise() {
               </div>
             </div>
           ))}
-        </div>
         </div>
       </div>
     </section>
