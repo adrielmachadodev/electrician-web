@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X, Zap } from "lucide-react"
 import { useScrollY } from "@/hooks/useScroolY"
@@ -10,9 +10,32 @@ import Logo from '../public/logo.png'
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [ menuTransition, setMenuTransition ] = useState(false)
 
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
   const scrollY = useScrollY()
+
+  const open = () => {
+    setIsMenuOpen(true)
+    setTimeout(() => {
+      setMenuTransition(true)
+    }, 1)
+  }
+
+  const close = () => {
+    setMenuTransition( false )
+    setTimeout(() => {
+      setIsMenuOpen( false )
+    }, 400)
+  }
+
+  useEffect(() => {
+    const body = document.getElementsByTagName('body')[0]
+    if( menuTransition ) {
+      body.style.overflowY = "hidden"
+    } else {
+      body.style.overflowY = "auto"
+    }
+  }, [ menuTransition ])
 
   return (
     <nav className={`fixed w-full top-0 z-50 duration-500 ${ scrollY > 70 ? "bg-primary/100" : "bg-primary/0"}`}>
@@ -30,73 +53,54 @@ export function Navbar() {
             <a href="#" className="text-primary-foreground hover:text-accent transition-colors">
               Inicio
             </a>
-            <a href="#" className="text-primary-foreground hover:text-accent transition-colors">
+            <a href="#nosotros" className="text-primary-foreground hover:text-accent transition-colors">
+              Nosotros
+            </a>
+            <a href="#servicios" className="text-primary-foreground hover:text-accent transition-colors">
               Servicios
             </a>
-            <a href="#" className="text-primary-foreground hover:text-accent transition-colors">
-              Página
-            </a>
-            <a href="#" className="text-primary-foreground hover:text-accent transition-colors">
-              Blog
-            </a>
-            <a href="#" className="text-primary-foreground hover:text-accent transition-colors">
+            <a href="#contacto" className="text-primary-foreground hover:text-accent transition-colors">
               Contacto
             </a>
           </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={toggleMenu}
-              className="text-primary-foreground hover:text-primary-foreground hover:bg-primary-foreground/10"
-            >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </Button>
+              <Menu className="h-8 w-8 text-white" onClick={open} />
           </div>
         </div>
 
         {/* Mobile menu */}
         {isMenuOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-primary/95 border-t border-primary-foreground/20">
-              <div className="flex items-center space-x-2 text-sm mb-4 px-3 py-2">
-                <span className="text-primary-foreground/70">Emergencia:</span>
-                <span className="font-semibold text-accent">+123 456 789</span>
+          <>
+            <div
+              className={`fixed left-0 top-0 w-screen h-screen bg-black duration-300 ${menuTransition ? "opacity-50" : "opacity-0"}`}
+              onClick={close}
+            />
+            <div className={`fixed top-0 h-screen w-[250px] bg-primary duration-300 ${ menuTransition ? 'left-0' : '-left-[250px]'}`}>
+              <div className="px-5 py-12 pb-3 space-y-1 flex flex-col gap-6">
+                <a onClick={close} href="#inicio">
+                  <Image 
+                    src={Logo}
+                    alt="Logo"
+                    className={`mx-auto duration-500 w-auto h-20 mb-10`}
+                  />
+                </a>
+                <a onClick={close} href="#" className="text-primary-foreground hover:text-accent transition-colors">
+                  Inicio
+                </a>
+                <a onClick={close} href="#nosotros" className="text-primary-foreground hover:text-accent transition-colors">
+                  Nosotros
+                </a>
+                <a onClick={close} href="#servicios" className="text-primary-foreground hover:text-accent transition-colors">
+                  Servicios
+                </a>
+                <a onClick={close} href="#contacto" className="text-primary-foreground hover:text-accent transition-colors">
+                  Contacto
+                </a>
               </div>
-              <a
-                href="#"
-                className="block px-3 py-2 text-primary-foreground hover:text-accent transition-colors font-medium"
-              >
-                Inicio
-              </a>
-              <a
-                href="#"
-                className="block px-3 py-2 text-primary-foreground hover:text-accent transition-colors font-medium"
-              >
-                Servicios
-              </a>
-              <a
-                href="#"
-                className="block px-3 py-2 text-primary-foreground hover:text-accent transition-colors font-medium"
-              >
-                Página
-              </a>
-              <a
-                href="#"
-                className="block px-3 py-2 text-primary-foreground hover:text-accent transition-colors font-medium"
-              >
-                Blog
-              </a>
-              <a
-                href="#"
-                className="block px-3 py-2 text-primary-foreground hover:text-accent transition-colors font-medium"
-              >
-                Contacto
-              </a>
             </div>
-          </div>
+          </>
         )}
       </div>
     </nav>

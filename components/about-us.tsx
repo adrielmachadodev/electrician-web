@@ -1,14 +1,22 @@
 import { Button } from "@/components/ui/button"
-import { MoveRight, Sparkles, Zap } from "lucide-react"
+import { MoveRight, Sparkles, Zap, Clock3, Shield } from "lucide-react"
 import { MiniTitle } from "./ui/mini-title"
 import { Title } from "./ui/title"
 
 export function AboutUs() {
   const points = [
-    "Lorem ipsum dolor, sit amet.",
-    "Lorem ipsum dolor, sit amet consectetur.",
-    "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-    "Lorem ipsum dolor, sit amet consectetur adipisicing.",
+    {
+      text: "Entregas Express en 24-48 horas",
+      icon: <Zap className="text-accent" />
+    },
+    {
+      text: "Almacenamiento seguro y flexible",
+      icon: <Clock3 className="text-accent" />
+    },
+    {
+      text: "Seguro incluido en todos los envíos",
+      icon: <Shield className="text-accent" />
+    },
   ]
 
   return (
@@ -16,7 +24,7 @@ export function AboutUs() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-3 pb-3">
           <MiniTitle title="Acerca de Nosotros" />
-          <Title title="Somos un Servicio Eléctrico Profesional" />
+          <Title title="Tu Servicio Logístico de Confianza" />
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
@@ -24,7 +32,7 @@ export function AboutUs() {
           <div className="relative">
             <div className="relative overflow-hidden shadow-xl">
               <img
-                src="/professional-electrician-in-hard-hat-and-uniform-s.jpg"
+                src="/about-us-image.webp"
                 alt="Electricista profesional con laptop en panel eléctrico"
                 className="w-full h-[400px] object-cover object-top"
               />
@@ -42,21 +50,19 @@ export function AboutUs() {
           <div className="space-y-6">
             <div className="space-y-4 text-gray-600 leading-relaxed">
               <p className="text-xl font-bold text-primary uppercase tracking-wide bg-white/80  rounded-lg inline-block">
-                LA BUENA CALIDAD TE SALVA DEL FUEGO.
+                LA EFICIENCIA QUE TU NEGOCIO NECESITA
               </p>
 
               <p>
-                Aliquam ex lacus, imperdiet eu efficitur blandit, eleifend a dui. Curabitur auctor interdum rutrum.
-                Curabitur tincidunt eu nunc sit amet eleifend. Nunc pellentesque a velit sed rhoncus. Vivamus vestibulum
-                faucibus arcu, vitae efficitur nulla dictum ut.
+                Conectamos tu negocio con tus clientes a través de soluciones logísticas integrales. Con más de 15 años de experiencia, ofrecemos servicios de transporte, almacenamiento y distribución con tecnología de punta y un equipo comprometido con la excelencia.
               </p>
             </div>
 
             <div className="flex flex-col gap-4">
               {points.map((point, i) => (
                 <div key={i} className="flex items-center gap-2">
-                  <Zap className="text-accent" />
-                  <p className="text-black">{point}</p>
+                  { point.icon }
+                  <p className="text-black">{point.text}</p>
                 </div>
               ))}
             </div>
