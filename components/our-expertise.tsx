@@ -22,17 +22,9 @@ export function OurExpertise() {
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="max-w-3xl mb-6">
-          <MiniTitle 
-            title="Our expertise"
-          />
-          <Title 
-            title="The Field On Which We Give Services"
-          />
-=======
         <div className="text-center max-w-3xl mx-auto mb-6">
           <MiniTitle title="Nuestra Experiencia" />
           <Title title="Los Campos en los que Brindamos Servicios" />
->>>>>>> ab25a5cd070e16aabca09de7c881a4b9f1fd7a63
           <p className="text-gray-600 text-lg leading-relaxed">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate, dui quis semper consequat,
             tellus augue fringilla orci, non fermentum neque nunc id nibh.
@@ -57,6 +49,7 @@ export function OurExpertise() {
               </div>
             </div>
           ))}
+        </div>
         </div>
       </div>
     </section>
